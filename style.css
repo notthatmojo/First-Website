@@ -1,0 +1,579 @@
+/** @format */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 55px 5px 55px;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 999;
+}
+header img{
+    cursor: pointer;
+}
+nav {
+  position: relative;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  place-items: center;
+}
+header nav .navigator i{
+    display: none;
+}
+nav li {
+  padding: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+  list-style: none;
+  width: 130px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+ nav ul li:hover{
+    background: #ccc;
+    text-align: center;
+    place-items: center;
+    border-top: 4px solid black;
+    color: white;
+} 
+
+nav li a {
+  font-size: 23px;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  width: 130px;
+  height: 40px;
+  transition: all 0.3s ease;
+}
+nav li a:hover{
+    width: 130px;
+    height: 40px;
+}
+main{
+    background-image: linear-gradient(rgba(0, 0, 1, 0.082), rgba(0,0,0,.05)) , url(pictures/main.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 900px;
+    color: white;
+    margin-bottom: 200px;
+}
+main{
+    padding-left: 80px;
+}
+main .heading {
+    position: relative;
+    top:100px;
+    margin-bottom: 100px;
+}
+.heading h1{
+    font-size: 70px;
+    padding-left: 80px;
+}
+.heading h1 span{
+    font-size: 70px;
+    font-weight: 400;
+}
+.heading p{
+    font-size: 20px;
+    margin-top: 60px;
+    padding-bottom: 80px;
+    padding-left: 80px;
+    line-height: 40px;
+}
+.proceed{
+    padding-left: 80px;
+    padding-bottom: 80px;
+}
+.proceed button{
+    width:220px;
+    height: 70px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+.proceed button a{
+    font-size: 25px;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.proceed button i{
+    font-size: 20px;
+    color: white;
+}
+.list{
+    padding-left: 80px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px;
+}
+.list ul{
+    display: flex;
+}
+.list ul li{
+    width: 450px;
+    background: #000;
+    list-style: none;
+    padding: 40px;
+    border-right: 1px solid #fff;
+    height: 350px;
+}
+.list ul li:last-child{
+    border-right: none;
+}
+.list h2{
+    margin-bottom: 17px;
+    font-size: 35px;
+}
+.list li{
+    line-height: 36px;
+    font-size: 17px;
+}
+.section-1{
+    padding-left: 80px;
+}
+.section-1-header{
+    padding-left: 80px;
+    display: flex;
+    margin: 20px;
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+.section-1-header h1{
+    font-size: 40px;
+    line-height: 40px;
+    padding-right: 80px;
+}
+.section-1-header h1 span{
+    font-size: 33px;
+    font-weight: normal;
+}
+.section-1-header p{
+    font-size: 27px;
+    font-weight: lighter;
+}
+.main-article{
+    display: flex;
+    padding-left: 90px;
+    position: relative;
+}
+.main-article article{
+    width: 450px;
+    background: black;
+    color: white;
+    margin-right: 25px;
+    height: 100%;
+    transition: 0.3s ease-in all;
+}
+.main-article article .post-content{
+    height: 290px;
+    padding-left: 30px;
+}
+.main-article article .post-content h2{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.main-article article .post-content p{
+    line-height: 35px;
+    font-size: 20px;
+}
+.main-article article .post-img{
+    height: 0px;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: 0.3s ease all;
+}
+.main-article article:hover .post-img{
+    height:300px ;
+}
+section button{
+    width: 240px;
+    height: 65px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: black;
+    border-radius: 5px;
+    font-size: 20px;
+    position: relative;
+    margin-bottom: 150px;
+    left: 650px;
+    outline: none;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+section button:hover{
+    background: green;
+    color: white;
+    font-family: sans-serif;
+}
+section button i{
+    color: white;
+    font-size: 20px;
+}
+section button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+#section-2{
+    padding-left: 80px;
+    display: flex;
+}
+#section-2 .img-1 img{
+    height: 880px;
+}
+.sect2main{
+    padding-left: 50px;
+    margin-top: 120px;
+}
+.sect2main .tne{
+    display: flex;
+    margin-bottom: 50px;
+}
+.sect2main .tne p{
+    font-size: 25px;
+}
+.sect2main .line{
+    height: 17px;
+    width: 600px;
+    background: black;
+    margin-left: 50px;
+}
+.section-2-header h1{
+    font-size: 85px;
+    color: rgb(70, 187, 70);
+    font-weight: 800;
+    line-height: 75px;
+    left: -120px;
+    position: relative;
+}
+.section-2-header p{
+    color: #ccc;
+    font-size: 22px;
+    line-height: 40px;
+    letter-spacing: 7px;
+    margin-top: 60px;
+}
+#section-3{
+    margin-top: 110px;
+    width: 100%;
+    height: 900px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0,0,0,.05)) , url(pictures/TNE3.jpg);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.sect3{
+    position: relative;
+    top: 170px;
+}
+.section-3-header h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#section-3 p{
+    font-size: 25px;
+}
+#section-3 .playbtn a i{
+    font-size: 120px;
+    color: white;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+#section-3 .icons a i{
+    color: white;
+    font-size: 30px;
+}
+#section-4{
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 60px;
+}
+.sect41{
+    display: flex;
+    padding-top: 100px;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid black;
+}
+.sect41 ul{
+    width: 300px;
+    display: flex;
+}
+.sect41 ul li{
+    list-style: none;
+}
+.sect41 ul li img{
+    height: 150px;
+}
+.sect41 .Pnumber{
+    font-size: 33px;
+    font-weight: 600 ;
+    margin-bottom: 15px;
+    left: 50px;
+    position: relative;
+}
+.partners{
+    margin-bottom: 20px;
+}
+.sect41 .Ptext{
+    font-size: 25px;
+}
+.partners .logo{
+    display: flex;
+    justify-content: space-between;
+}
+.partners .logo img{
+    height: 90px;
+    object-fit: contain;
+}
+.partners p{
+    font-size: 20px;
+    font-weight: 600 !important;
+    margin-bottom: 25px;
+}
+footer{
+    width: 100%;
+    height: 400px;
+    background: black;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+footer .logo img{
+    height: 60px;
+    margin: 45px 0 30px 0;
+}
+.footer-header h1{
+    color: rgb(120, 201, 120);
+    margin-bottom: 30px;
+}
+.footer-header p{
+    color: grey;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+footer .link{
+    margin-bottom: 60px;
+}
+footer .link ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+footer .link ul li{
+    list-style: none;
+    margin-right: 30px;
+}
+footer .link ul li a{
+    text-decoration: none;
+    color:rgb(120, 201, 120);
+    font-size: 22px;
+    transition: all 0.3s ease;
+}
+footer .link ul li a:hover{
+    color: white;
+}
+.links2 a i{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* </-------- media queieri   */
+
+@media (max-width : 1200px){
+    header nav ul{
+        display: none;
+    }
+    header nav ul.active{
+        display: block;
+        padding-top: 300px;
+        background: rgb(79, 207, 79);
+        width: 340px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        right: -90px;
+        height: 100%;
+    }
+    header nav .navigator i{
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+    }
+    header nav .navigator i.active{
+        position: relative;
+        top: -280px;
+        color: white;
+        display: block;
+        left: 350px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+@media (max-width : 800px) {
+    header nav ul{
+        display: none;
+    }
+    header nav ul.active{
+        display: block;
+        padding-top: 300px;
+        background: rgb(79, 207, 79);
+        width: 300px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        right: -90px;
+        height: 100%;
+    }
+    header nav .navigator i{
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+    }
+    header nav .navigator i.active{
+        position: relative;
+        top: -280px;
+        color: white;
+        display: block;
+        left: 270px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    main{
+        padding-left: 10px;
+        margin-right: 20px;
+        /* margin-bottom: 20px; */
+        padding-bottom: 20px;
+    }
+    main .heading h1{
+        font-size: 50px;
+    }
+    main .heading h1 span{
+        font-size: 30px;
+    }
+    main .heading h1 p{
+        padding-right: 20px;
+        margin-right: 70px;
+    }
+    .list{
+        padding-right: 60px;
+        width: 100%;
+    }
+    .list ul{
+        display: block;
+    }
+    .list ul li{
+        height: 100%;
+        border-right: none;
+        border-bottom: 1px solid white;
+        width: 100%;
+    }
+    .main-article{
+        padding-top: 40px;
+        display: block;
+        width: 100%;
+    }
+    .main-article article{
+        width: 100%;
+    }
+    .main-article .post-content{
+        width: 100%;
+        /* text-align: center; */
+    }
+    .section-1{
+        padding-top: 50px;
+        margin-top: 30px;
+        display: block;
+    }
+    .section-1-header{
+        padding-top: 800px;
+        display: block;
+    }
+    .section-1-header p{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    section button{
+        padding-left: -10px;
+        left: 170px;
+    }
+    #section-2 .img-1 img{
+        height: 420px;
+        width: 100%;
+    }
+    #section-2{
+        display: block;
+    }
+    #section-4 .sect41{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    #section-4 .partners .logo{
+        display: block;
+        align-items: center;
+    }
+    #section-4 .partners .logo img{
+        display: block;
+        align-items: center;
+    }
+    #section-4 .partners .logo .logo-4{
+        width: 100px;
+    }
+}
+
+
+@media (max-width:500px) {
+    main{
+        padding-bottom: 300px;
+    }
+    .main-article{
+        padding-top: 90px;
+        display: block;
+    }
+    .section-1{
+        padding-top: 50px;
+        margin-top: 100px;
+        display: block;
+    }
+    .section-1-header{
+        padding-top: 1400px;
+        display: block;
+    }
+    .section-1 button{
+        padding-left: 10px;
+    }
+    #section-2 img{
+        height: 100px;
+    }
+}
